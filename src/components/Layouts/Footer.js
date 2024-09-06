@@ -7,9 +7,9 @@ export const Footer = () => {
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2030{" "}
           <Link to="/" className="hover:underline">
-            E-Store By: Armaan Aijaz Siddiqui
+            CourseVerse By: Armaan Aijaz Siddiqui
           </Link>
-          .| All Rights Reserved.
+          .| Version 1.2
         </span>
         <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
           <Link
