@@ -13,7 +13,7 @@ export const CartCard = ({ product }) => {
           />
         </Link>
         <div className="">
-          <Link to={`http://localhost:3001/products/${product.id}`}>
+          <Link to={`${process.env.REACT_APP_HOST}/products/${product.id}`}>
             <p className="text-lg ml-2 dark:text-slate-200">{product.name}</p>
           </Link>
           <button
