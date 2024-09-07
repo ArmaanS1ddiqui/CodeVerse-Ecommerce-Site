@@ -96,7 +96,7 @@ export const FilterBar = ({ setShow }) => {
               <div className="flex items-center my-1">
                 <input
                   onChange={() => {
-                    console.log("4STARS HAS BEEN SELECTED");
+                    // console.log("4STARS HAS BEEN SELECTED");
 
                     dispatch({
                       type: "RATINGS",

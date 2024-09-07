@@ -47,15 +47,15 @@ export const FilterProvider = ({ children }) => {
 
   function rating(products) {
     if (state.ratings === "4STARSABOVE") {
-      console.log("FILTER IS WORKING4");
+      // console.log("FILTER IS WORKING4");
       return products.filter((product) => product.rating >= 4);
     }
     if (state.ratings === "3STARSABOVE") {
-      console.log("FILTER IS WORKING3");
+      // console.log("FILTER IS WORKING3");
       return products.filter((product) => product.rating >= 3);
     }
     if (state.ratings === "2STARSABOVE") {
-      console.log("FILTER IS WORKING2");
+      // console.log("FILTER IS WORKING2");
       return products.filter((product) => product.rating >= 2);
     }
     if (state.ratings === "1STARSABOVE") {
@@ -64,13 +64,13 @@ export const FilterProvider = ({ children }) => {
     return products;
   }
 
-  console.log("State before filtering:", state);
+  // console.log("State before filtering:", state);
 
   const filteredProductList = rating(
     sort(inStock(bestSeller(state.productList)))
   );
 
-  console.log("Filtered Product List:", filteredProductList);
+  // console.log("Filtered Product List:", filteredProductList);
 
   const value = {
     state,

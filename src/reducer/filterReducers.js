@@ -1,7 +1,7 @@
 export const filterReducer = (state, action) => {
   const { type, payload } = action;
 
-  console.log("Action Triggered:", type, payload);
+  // console.log("Action Triggered:", type, payload);
 
   switch (type) {
     case "PRODUCT_LIST":

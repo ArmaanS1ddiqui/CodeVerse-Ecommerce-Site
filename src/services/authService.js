@@ -14,7 +14,7 @@ export async function login(authDetail) {
     const data = await response.json();
 
     // Log the response to inspect its structure
-    console.log(data);
+    // console.log(data);
 
     if (!response.ok) {
       // If the response contains an error message from the backend, show it
@@ -51,7 +51,7 @@ export async function register(authDetail) {
     const data = await response.json();
 
     // Log the response to inspect its structure
-    console.log(data);
+    // console.log(data);
 
     if (!response.ok) {
       // If the response contains an error message from the backend, show it
