@@ -18,7 +18,7 @@ export async function login(authDetail) {
 
     if (!response.ok) {
       // If the response contains an error message from the backend, show it
-      const errorMessage = data.message || "Login failed. Please try again.";
+      const errorMessage = data.message || data;
       // eslint-disable-next-line no-throw-literal
       throw { message: errorMessage, status: response.status };
     }
