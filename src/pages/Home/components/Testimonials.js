@@ -1,4 +1,7 @@
 import test from "../../../assets/testimonial1.jpg";
+import test2 from "../../../assets/testimonial_2.jpg";
+import test3 from "../../../assets/testimonial_3.jpg";
+import test4 from "../../../assets/testimonial_4.jpg";
 
 export const Testimonials = () => {
   return (
@@ -13,19 +16,15 @@ export const Testimonials = () => {
               Very easy this was to integrate
             </h3>
             <p className="my-4 font-light">
-              If you care for your time, I hands down would go with this."
+              "Perfect For Learning New Things In My Free Time"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
-            <img
-              className="w-9 h-9 rounded-full"
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=120&q=50"
-              alt="user"
-            />
+            <img className="w-9 h-9 rounded-full" src={test3} alt="user" />
             <div className="space-y-0.5 font-medium dark:text-white text-left">
-              <div>Bonnie Green</div>
+              <div>G Shiva Rama Krishnan</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Developer at Random AI
+                IAS Aspirant
               </div>
             </div>
           </figcaption>
@@ -36,20 +35,15 @@ export const Testimonials = () => {
               Solid foundation for any project
             </h3>
             <p className="my-4 font-light">
-              Designing with Figma components that can be easily translated to
-              the utility classes of Tailwind CSS is a huge timesaver!"
+              "Very Easy To Explore New Courses . Would Definitely Recommened"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
-            <img
-              className="w-9 h-9 rounded-full"
-              src="https://images.unsplash.com/photo-1525085475165-c6808cdb005e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=120&q=50"
-              alt="user"
-            />
+            <img className="w-9 h-9 rounded-full" src={test4} alt="user" />
             <div className="space-y-0.5 font-medium dark:text-white text-left">
-              <div>Roberta Casas</div>
+              <div>Vibhor Verma</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Lead designer at Random
+                B.Tech Student
               </div>
             </div>
           </figcaption>
@@ -60,20 +54,15 @@ export const Testimonials = () => {
               Mindblowing workflow
             </h3>
             <p className="my-4 font-light">
-              Aesthetically, the well designed components are beautiful and will
-              undoubtedly level up your next application."
+              "Perfect For Beginners . Very Convenient Order Tracking"
             </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
-            <img
-              className="w-9 h-9 rounded-full"
-              src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=120&q=60"
-              alt="user"
-            />
+            <img className="w-9 h-9 rounded-full" src={test2} alt="user" />
             <div className="space-y-0.5 font-medium dark:text-white text-left">
-              <div>Jese Leos</div>
+              <div>Vaaman Kohli</div>
               <div className="text-sm font-light text-gray-500 dark:text-gray-400">
-                Software Engineer at Random
+                Junior Analyst At EY
               </div>
             </div>
           </figcaption>
@@ -83,7 +72,9 @@ export const Testimonials = () => {
             <h3 className="text-lg font-semibold text-gray-900 dark:text-white">
               Efficient Collaborating
             </h3>
-            <p className="my-4 font-light">Good Website, Very Reliable</p>
+            <p className="my-4 font-light">
+              Good Website, Very Reliable for safe transactions
+            </p>
           </blockquote>
           <figcaption className="flex justify-center items-center space-x-3">
             <img className="w-9 h-9 rounded-full" src={test} alt="user" />

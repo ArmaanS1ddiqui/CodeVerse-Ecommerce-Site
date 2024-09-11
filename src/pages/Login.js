@@ -38,6 +38,7 @@ export const Login = () => {
       toast.error(error.message, { closeButton: true });
     }
   }
+
   return (
     <main>
       <section>
@@ -78,19 +79,33 @@ export const Login = () => {
             required
           />
         </div>
-        <button
-          type="submit"
-          className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-        >
-          Log In
-        </button>
+        <div className="flex items-center gap-4 mb-4">
+          {" "}
+          {/* Reduced bottom margin */}
+          <button
+            type="submit"
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Log In
+          </button>
+          <button
+            onClick={handleLoginGuest}
+            className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Login As Guest
+          </button>
+        </div>
       </form>
-      <button
-        onClick={handleLoginGuest}
-        className="mt-3 cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-      >
-        Login As Guest
-      </button>
+      <div className="text-left mb-2">
+        {" "}
+        <p className="text-blue-600 dark:text-blue-400">Not registered?</p>
+        <button
+          onClick={() => navigate("/register")}
+          className="text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-500 dark:hover:bg-blue-600 dark:focus:ring-blue-700"
+        >
+          Go to Register
+        </button>
+      </div>
     </main>
   );
 };
